@@ -25,15 +25,17 @@
         </div>
         <section>
             <!--logo principal-->
-            <img src="assets/logo farma busca.png" alt="" class="logo"> 
+            <img src="assets/logo farma busca.png" alt="" class="logo">
             <div class="titulo">
                 <a href="index.html" class="farma"> Farma </a>
                 <a href="index.html" class="busca"> Busca </a>
+               <!-- <img src="assets/simbolofarmacia.png" alt="simbolo da farmacia" class="simbolo-farmacia"> -->
             </div>
             <!--ára de busca-->
             <div>
-                <input type="search" class="typebox" id="txtbox" size="70" placeholder="O que está buscando?">
-            </div> 
+                <input type="search" class="typebox" id="txtbox" size="70" placeholder="O que está buscando?"> 
+            </div>
+            
             <!--área dos botões cadastro e salvos-->
             <div>
                 <input type="button" class="b-cadastro" id="botao-cadastro" size="70">
@@ -54,12 +56,19 @@
         </section>
         <!--área de navegação-->
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li>
                     <a href="index.html" class="Inicio"> Início </a>
 
-                    <a href="//" class="Categorias"> Categorias </a>
+                    <a href="#" class="Categorias-navbar" id="categoria-link"> Categorias </a>
 
+                    <a href="//" class="Medicamentos-navbar"> Medicamentos </a>
+
+                    <a href="//" class="lojas-navbar"> Lojas </a>
+
+                    <a href="como-funciona.html" class="Como-funciona-navbar"> Como funciona </a>
+
+                    <a href="contato.html" class="Contato-navbar"> Contato </a>
                 </li>
             </ul>
            
@@ -104,17 +113,17 @@
             <div class="form-cadastro" id="form-cadastro">
                 <div class="bg-login"></div>
                 <div class="bg-login2"></div>
-                <span class="close-btn material-symbols-rounded">X</span>
+                <button class="close-btn2" id="close-btn2">X</button>
                 <div class="tela-cadastro">
                     <div class="form-content">
                         <h2>CADASTRO</h2>
                         <form action="#">
-                            <div class="input-field">
+                            <div class="input-field" id="input-field">
                                 <input type="text" required>
                                 <label>Coloque seu Email</label>
                             </div>
                             <div class="input-field">
-                                <input type="password" required>
+                                <input type="password" id="inputPassword" required>
                                 <label>Criar senha</label>
                             </div>
                             <button type="submit">Logar</button>
@@ -132,40 +141,62 @@
             </div>            
 
         </section>
-  
+
+        <!--aba categorias-->
+        <section>
+            <div class="form-categorias" id="form-categoria">
+                <div class="tela-categorias">
+                    <div class="form-content2">
+                        <a href="index.html" class="Inicio2" id="Inicio"> Início </a>
+
+                        <a href="#" class="Medicamentos-aba"> Medicamentos </a>
+
+                        <a href="#" class="lojas-aba"> Lojas </a>
+
+                        <a href="como-funciona.html" class="Como-funciona-aba"> Como funciona </a>
+
+                        <a href="contato.html" class="Contato-aba"> Contato </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
     <!--rodapé (parte final do site)-->
     <footer>
         <section>
 
-            <div class="rodape">
+            <div class="rodape-bg">
             </div>
 
             <section>
+                <div class="rodape-txt">
+                    <div class="nossa-rede-txt">
+                        <span>Nossa rede</span>
+                    </div>
+                    <div class="contato-txt">
+                        <span>Contato:</span>
+                    </div>
+                    <div class="email-contato">
+                        <span>farameterj@gmail.com</span>
+                    </div>
+                    <div class="txt-farmabusca-rodape">
+                        <label>FarmaBusca2025</label>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" class="link_instagram"> Instagram 
+                                <img src="assets/logo_instagram.png" alt="logo do instagram" class="logo-instagram">
+                            </a>
+                                
+                        </li>
+                    </ul>
+                </div>
 
-                <div class="nossa-rede-txt">
-                    <span>Nossa rede</span>
-                </div>
-                <div>
-                    
-                </div>
-                <div class="contato-txt">
-                    <span>Contato:</span>
-                </div>
-                <div class="email-contato">
-                    <span>farameterj@gmail.com</span>
-                </div>
-                <div class="txt-farmabusca-rodape">
-                    <label>FarmaBusca 2025</label>
-                </div>
-                <ul>
-                    <li>
-                        <a href="//" class="link_instagram"> Instagram 
-                            <img src="assets/logo_instagram.png" alt="logo do instagram" class="logo-instagram">
-                        </a>
-                            
-                    </li>
                 </ul>  
+               <!--<img src="assets/cobra_decoracao.png" alt="" class="snake-decoration">-->
                 
             </section>
         </section>
